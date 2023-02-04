@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+
+}
+
+body{
+    font-family: "Lato","sans-serif";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: white;
+}
+
+h1,h2,h3,h4,h5,h6{
+     font-weight: 700;
+     font-family: Montserrat;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type:none ;
+}
+
+section{
+    
+    padding: top 10rem; 
+    padding-bottom: 10rem ;
+    text-align: center;
+}
+
+.img-fluid{
+    max-width: 250px;
+    height: auto;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+.container{
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.nav-link{
+    text-transform: uppercase;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+
+/*NAVBAR*/
+nav{
+    width: 100%;
+    font-family: Montserrat;
+    background-color: rgb(47,48,59);
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: fixed;
+    z-index: 500;
+}
+
+#logo-box{
+    float: left;
+    padding-top: 0.5rem;
+}
+
+#logo-box .logo{
+    color: white;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+#nav-links{
+    float: right;
+
+}
+
+#nav-links .nav-item{
+    float: left;
+    margin: 0.5rem;
+}
+
+#nav-links .nav-link{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+    padding: 1.6rem;
+    letter-spacing: 0.1rem;     /*kelimeler arası boşluk için*/
+    transition: color 0.4s;     /*rengin kaç saniyede geleceği*/
+}
+
+#nav-links .nav-link:hover{
+    color: rgb(152,57,64);
+}
+
+header{
+    background-color: rgb(152,57,64);
+    height: 753px;
+    padding-top: calc(106px + 2rem);
+    text-align: center;
+
+}
+
+header h1{
+    color: white;
+    font-size: 6rem;
+}
+
+header h2{
+    color: white;
+    font-size: 2.6rem;
+    font-size: "Lato";
+    font-weight: 300;
+}
+
+
+.star-light,.star-dark{
+    border: none;
+    border-top: 0.4rem solid white;
+    border-radius: 8px;
+    max-width: 30rem;
+    margin: 2.5rem auto;
+    overflow: visible;      
+    height: 0;              
+   
+}
+/*Portfolio*/
+
+#portfolio{
+    height: 1430px;
+    background-color: rgb(47,48,59);
+}
+
+#portfolio h2{
+    font-size: 4.8rem;
+    color: white;
+}
+
+.img-fluid-p{
+    max-width: 100%;
+    height: auto;
+}
+
+.col{
+    float: left;
+    width: 33.3333%;
+    padding: 10px;
+}
+#last-div{
+    width: 33.3333%;
+    padding: 10px;
+    position: relative;
+    margin: auto;
+
+}
+
+.portfolio-item{
+    position: relative;    
+    
+}
+.portfolio-item img{
+    display: block;
+    width: 100%;
+    height: 300px;
+    border-radius:10px ;
+}
+
+
+
+.img-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgb(152,57,64) ;
+    opacity: 0;
+    transition: 0.3s;
+    
+
+}
+
+.img-overlay .icon{
+    color:white;
+    font-size: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.portfolio-item:hover .img-overlay{
+    opacity: 0.7;
+    border-radius:10px ;
+}
+
+
+
+footer{
+    
+    background-color:rgb(47,48,59) ;
+}
+
+.footer{
+    justify-content: center;
+    text-align: center;
+}
+
+.footer i{
+    margin-right:5px;
+    margin-left:10px ;
+    color: white;
+    
+}
+
+.footer a{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+    
